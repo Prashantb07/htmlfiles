@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Form in HTML</title>
+    </head>
+    <body>
+        <marquee> CREATING FORM IN HTML... </marquee>
+        <br>
+            <caption> Form Table Heading </caption>
+        <form>
+            <div>
+                <label> Enter name </label>
+                <input type="text" name="Name" placeholder="Enter Name" required>
+            </div>
+            <br>
+            <div>
+                <label> Enter Email Id</label>
+                <input type="text" name="Email" placeholder="Enter Email" required>
+            </div>
+            <br>
+
+            <div>
+                <label> Enter password </label>
+                <input type="text" name="Password" placeholder="Enter Password" required> 
+            </div>
+            <br>
+            <div>
+                <label> Enter Gender </label>
+                <input type="radio" name="GENDER"> MALE
+                <input type="radio" name="GENDER"> FEMALE
+                <input type="radio" name="GENDER"> OTHER
+            </div>
+            <br>
+            <div>
+                <label> SELECT THE CITY</label>
+                <select name="City">
+                    <option>##--SELECT--##</option>
+                    <option> Mangaluru </option>
+                    <option> Bangaluru </option>
+                    <option value="Hubli"></option>
+                    <option value="Mysore"></option>
+                </select>
+            </div>
+            <br>
+        <div>
+            <!--Address-->
+            <label>Enter Address </label>
+            <textarea name="Enter address" id="" cols="30" rows="10" required   ></textarea>
+        </div>
+        <div>
+            <!--Data of Birth-->
+            <label for="Date of Birth"></label>
+            <input type="Date">
+        </div>
+        <div>
+            <!--File upload-->
+            <label>Upload file</label>
+            <input type="file">
+        </div>
+
+        <button type="Submit" > Register </button>
+        <button type="Reset"> Reset </button>
+
+
+        <!--minlength, maxlength-->
+    
+            </form>
+
+    </body>
+</html>
