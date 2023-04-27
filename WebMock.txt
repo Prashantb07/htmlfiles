@@ -1,0 +1,224 @@
+What is html ?
+html is hyper text markup language and it is use to create web pages.
+
+What is attribute ?
+Attribute we are writing inside the tag and html elements can have attributes
+
+Basic structure of html ?
+<!Doctype html>
+<html>
+<head> 
+<title> Mock </title>
+</head>
+<body>
+<div> All the Best </div>
+</body>
+</html>
+
+
+create a image in html?
+->for creating image we will use img tag
+ <img src="image path">
+ex:- 
+<!Doctype html>
+<html>
+<head>
+<title> imgae </title>
+</head>
+<body>
+<div> 
+<img src="image path">
+</div>
+</body>
+</html>
+
+How to create hyperlink in html?
+-> for creating hyperlink we will use anchore <a> </a> tag
+ex:- <a href="url">  </a>
+
+How to create table syntax in html?
+ ->  sysntax :- 
+ <table>
+ <tr> <th> </th> </tr>
+ <tr> <td> </td> </tr>
+ tr- table row
+ th - table header
+ td - table data
+ 
+ ex:-
+ <!Doctype html>
+ <html>
+ <head>
+ <title> creating table </title>
+ </head>
+ <body>
+ <table>
+ <tr>
+ <th> name </th>
+ <th> email </th>
+ <th> contactNo </th>
+ </tr>
+ <tr>
+ <td> Prashant </td>
+ <td> prashantbirdar094@gmail.com </td>
+ <td> 7406050101 </td>
+ </tr>
+ </body>
+ </html>
+ 
+ create a from with fields name, password,gender,city,dateofbrith in html ?
+-> 
+<!Doctype html>
+<html>
+<head>
+<title> create from </table>
+</head>
+<body> 
+<from> 
+<div>
+ <label> Enter name </label>
+ <input type="text" name="Name" placeholder="Enter name" requride>
+ </div>
+ <div>
+ <label> Enter Password </label>
+ <input type="test" name="Password" placeholder="Enter Password" requride>
+ </div>
+ <div>
+ <label> Gender </label>
+ <input type="radio" name="gender" >
+ </div>
+ <div>
+ <label> Select City </label>
+ <select name = "city">
+ <option> Select </option>
+ <option> Bangalore </option>
+ <option> Mangalore </option>
+ <option> Bagalkot </option>
+ </div>
+ <div>
+ <label for="date of brith"> </label>
+ <input type="Date">
+ </div>
+ </from>
+ </body>
+ </html>
+ 
+ 
+ What is Css and its syntax ?
+ -> Css is a adding styles to the html code 
+	CSS is cascading style sheets
+ sysntax:- 
+ h1{
+ height: 200px;
+ border: 1px solid red;
+ color : blue :
+ }
+ 
+ What is External Css?
+ -> linking one html file to another html file
+ we can change complete style of our html web page.
+ 
+ Explain the different type selectors in html?
+ -> there are 5 types selectors are there 
+ 1. Class Selector
+ 2. Id selector
+ 3. Grouping selector
+ 4. Element selector
+ 5. pesudo selector
+ 
+ 
+ Explain Css box model and example?
+ ->it consist of margin , border, padding and content
+  margin- margin is transparent and it will use outside the border.
+  border- border will use outside padding  and inside margin.
+  padding- it will be the around the content and it is transparent.
+  content- where text and images are appear .
+  
+  ex:- 
+  div{
+  width: 300px;
+  border: 1px solid;
+  margin: 20px;
+  padding: 20px 30px;
+  }
+  
+  create a image and display names inside the image by placing name at corner of the image?
+  <!Doctype html>
+  <html>
+  <head>
+  <title> image </title>
+  </head>
+  <style> 
+  .a{
+  position: relative;
+  right: 0;
+  left: 0:
+  height: 200px;
+  width: 200px;
+  }
+  </style>
+  <body>
+  <div class="imageRelative">
+  <img class="a" ,src="imagepath">
+  <div class="path"> image creating </div>
+   </div> 
+ </body>
+</html>
+
+
+What is java script ?
+Java is programming language for web and java script can update and change both html and css
+
+what is the syntax of java script?
+-> inside the header we will script tag
+<script> </script>
+
+ex:- 
+<!Doctype html>
+<html>
+<head>
+<title> Script </title>
+<script> </script>
+</head>
+<body>
+<div> </div>
+ </body>
+</html>
+
+
+Differnce between let,var and const?
+->
+ let - let will be update and it will not redeclared
+ var - var can be update and it will redeclared within its scope
+ const - const variables can neither be update nor redeclared
+ 
+ 
+
+Create a from and perform form validation in js?
+->
+	function register(){
+   var name = documnet.getElementbyid("name")
+   console.log(name)
+   console.log(name.value)
+   if(name.value == ''){
+   var nameMessage = documnet.getElementbyid("nameMessage")
+   nameMessage.innerHtml = 'please fill the above block'
+   nameMessage.style.color = 'red'
+   }
+   }
+   
+  
+   <form class="registerd">
+   <div>
+   <label>Name</label>
+   <input type="text" name = "name" id="name">  
+<span id="nameMessage"></span>   
+   </div>
+   
+   <div>
+   <button type="button" onclick="register()">Register</button>
+   </div>
+   </form>
+ 
+ 
+ 
